@@ -1,0 +1,108 @@
+# pm1.xlate glossary (2026-10-29): fixed zh <-> en terms for query translation. One term per line:
+#   中文<TAB>english|alternative ...
+# zh -> en: the Chinese term is replaced by the first English one before translating, and every English one is added
+# to the translation. en -> zh: an English term found in the query (whole words, any case) adds its Chinese term.
+# Built from the mistranslations of 121 real Chinese queries (重排 -> "rearrangements", 回测 -> "return tests", ...).
+# User additions: ~/.config/pm1/xlate_glossary.tsv, same format (read again when either file changes).
+重排服务	reranker service
+重排深度	rerank depth
+重排	reranker|rerank
+重排器	reranker
+显存比例	gpu-memory-utilization|VRAM share
+显存	VRAM|GPU memory
+显卡	GPU
+内存	RAM|memory
+交换分区	swap
+抽取链路	extraction pipeline
+抽取	extraction|extract
+三值版	ternary
+回测	backtest
+去重	dedup|deduplicate
+落盘	persist|write to disk
+提交号	commit
+提交	commit
+检出目录	checkout directory
+检出	checkout
+强推	force-push
+脱敏	redact|redacted
+延迟	latency
+吞吐	throughput
+召回率	recall
+精确率	precision
+召回	recall|retrieval
+命中率	hit rate
+预注册	prereg|preregistration
+对手矩阵	competitor matrix
+竞品	competitor
+关卡指标	gate metric
+错误记忆	false memory|wrong memory
+校验器	verifier|checker
+标注员	labeler|annotator
+标注	label|annotation
+裁判	judge
+盲判	blind judge
+判分	judge|grading
+作答	answer
+留出集	held-out
+开发集	dev set
+测试集	test set
+置信区间	confidence interval
+消融	ablation
+冒烟测试	smoke test
+冒烟	smoke test
+回归测试	regression test
+单元测试	unit test
+回滚	rollback
+部署	deploy|deployment
+上线	deploy|launch|go live
+生产环境	production
+生产	production
+仓库	repo|repository
+合并	merge
+分支	branch
+代码图	code graph
+知识图谱	knowledge graph
+事实索引	fact index
+图召回	graph recall
+全文索引	full-text index|fts
+关键词检索	keyword search|BM25
+向量检索	vector search|dense
+向量	vector|embedding
+嵌入	embedding
+分词	tokenize|tokenizer
+切词	tokenize|segmentation
+前缀缓存	prefix cache
+上下文	context
+提示词	prompt
+会话	session
+对话	conversation|chat
+记忆	memory
+预算	budget
+档位	tier
+队列	queue
+容器	container
+守护进程	daemon
+定时任务	cron|timer
+日志	log
+报错	error
+崩溃	crash
+端口	port
+隧道	tunnel
+沙箱	sandbox
+微调	fine-tune|finetune
+训练	train|training
+推理	inference
+量化	quantize|quantization
+权重	weights
+蒸馏	distill|distillation
+教师模型	teacher model
+学生模型	student model
+适配器	adapter|LoRA
+批大小	batch size
+并发	concurrency|parallel
+思考模式	thinking mode|reasoning
+工具调用	tool call|tool use
+基准	benchmark
+评测	eval|evaluation
+基线	baseline
+止损	stop loss

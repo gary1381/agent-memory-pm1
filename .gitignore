@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+# databases, run outputs and downloaded data never belong in the repository
+*.sqlite
+*.sqlite-*
+*.db
+eval/data/
+eval/reports/
+.env

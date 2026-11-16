@@ -1,0 +1,13 @@
+Precision Memory (pm1)
+Copyright 2026 Chaoxian (Gary) Xiao
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE), except as noted below.
+
+Third-party code included in this repository:
+
+- eval/beam_official/compute_metrics.py and eval/beam_official/prompts.py are copied from the BEAM benchmark
+  (https://github.com/mohammadtavakoli78/BEAM), Copyright (c) 2025 Mohammad Tavakoli, MIT License.
+  The full license text is in eval/beam_official/LICENSE. These files remain under the MIT License.
+
+No model weights or benchmark datasets are included. They are downloaded separately from their publishers and are
+covered by their own licenses; see docs/THIRD_PARTY.md.

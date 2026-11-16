@@ -1,0 +1,19 @@
+[Unit]
+Description=pm1 passive session capture (Codex rollouts, Claude Code transcripts) + token ledger
+After=default.target
+
+[Service]
+Type=simple
+# Example unit: copy to ~/.config/systemd/user/ and edit PM1_HOME (the checkout) first. deploy/install.sh --with-capture writes one for you.
+Environment=PM1_HOME=%h/precision-memory
+WorkingDirectory=%h/precision-memory
+Environment=PM1_DB=%h/.local/state/pm1/memory.sqlite
+Environment=PM1_INDEX_MODELS=dense:e5-small-q8
+ExecStart=%h/precision-memory/.venv/bin/pm1-capture watch -i 60
+Restart=on-failure
+RestartSec=30
+Nice=10
+IOSchedulingClass=idle
+
+[Install]
+WantedBy=default.target

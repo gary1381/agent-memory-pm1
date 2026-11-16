@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pm1"
+version = "0.1.0.dev0"
+description = "Precision Memory v1: raw-first, evidence-carrying agent memory on local models"
+readme = "README.md"
+license = {text = "Apache-2.0"}
+authors = [{name = "Chaoxian (Gary) Xiao"}]
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.26", "jieba>=0.42", "tomli>=2; python_version < '3.11'"]
+
+[project.optional-dependencies]
+local-embed = ["fastembed>=0.5"]
+docs = ["pypdf>=5", "python-docx>=1.1", "openpyxl>=3.1"]
+dev = ["pytest>=8"]
+xlate = ["ctranslate2>=4.5", "sentencepiece>=0.2"]   # pm1.xlate: query translation service (en -> zh)
+
+[project.scripts]
+pm1-mcp = "pm1.mcp:main"
+pm1-worker = "pm1.worker:main"
+pm1-sessindex = "pm1.sessindex:main"
+pm1-docs = "pm1.docs_cli:main"
+pm1-capture = "pm1.capture:main"
+pm1-meter = "pm1.meter:main"
+pm1-rule = "pm1.rules:cli"
+pm1-expbank = "pm1.expbank:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+pm1 = ["*.tsv", "*.jinja"]
