@@ -1,4 +1,4 @@
-# Precision Memory (pm1)
+# Agent Memory (pm1)
 
 pm1 is a local memory for AI coding agents. It records every Claude Code, Codex and Cursor session without calling an
 LLM, and over MCP it returns the original records that answer a question, packed to a fixed token budget.
